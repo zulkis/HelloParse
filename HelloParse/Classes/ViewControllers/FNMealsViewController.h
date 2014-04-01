@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol CHTCollectionViewDelegateWaterfallLayout;
+@class FNRestaurant;
 
-@interface CollectionViewController : UICollectionViewController <CHTCollectionViewDelegateWaterfallLayout>
+@interface FNMealsViewController : UICollectionViewController
+
+@property (nonatomic, strong) FNRestaurant *restaurant;
 
 @end

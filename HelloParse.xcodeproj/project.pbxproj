@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1330BAEB18E415E000E26D52 /* CollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1330BAEA18E415E000E26D52 /* CollectionViewFlowLayout.m */; };
+		1330BAEB18E415E000E26D52 /* FNCollectionViewDynamicWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1330BAEA18E415E000E26D52 /* FNCollectionViewDynamicWaterfallLayout.m */; };
 		133350A918E52FBF00DE8E4A /* TestImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 133350A818E52FBF00DE8E4A /* TestImage.jpeg */; };
 		133350B018E559AF00DE8E4A /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 133350AA18E559AF00DE8E4A /* 1.jpg */; };
 		133350B118E559AF00DE8E4A /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 133350AB18E559AF00DE8E4A /* 2.jpg */; };
@@ -15,6 +15,10 @@
 		133350B318E559AF00DE8E4A /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 133350AD18E559AF00DE8E4A /* 4.jpg */; };
 		133350B418E559AF00DE8E4A /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 133350AE18E559AF00DE8E4A /* 5.jpg */; };
 		133350B518E559AF00DE8E4A /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 133350AF18E559AF00DE8E4A /* 6.jpg */; };
+		133350BC18E95FEC00DE8E4A /* FNRestaurantsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 133350BB18E95FEC00DE8E4A /* FNRestaurantsViewController.m */; };
+		133350BF18E9600400DE8E4A /* FNRestaurantViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 133350BE18E9600400DE8E4A /* FNRestaurantViewCell.m */; };
+		133350C218E9609D00DE8E4A /* FNRestaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = 133350C118E9609D00DE8E4A /* FNRestaurant.m */; };
+		133350CA18E9698F00DE8E4A /* FNMeal.m in Sources */ = {isa = PBXBuildFile; fileRef = 133350C918E9698F00DE8E4A /* FNMeal.m */; };
 		13DF466B18E2B4E300A7F415 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13DF466A18E2B4E300A7F415 /* Foundation.framework */; };
 		13DF466D18E2B4E300A7F415 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13DF466C18E2B4E300A7F415 /* CoreGraphics.framework */; };
 		13DF466F18E2B4E300A7F415 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13DF466E18E2B4E300A7F415 /* UIKit.framework */; };
@@ -22,18 +26,16 @@
 		13DF467718E2B4E300A7F415 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DF467618E2B4E300A7F415 /* main.m */; };
 		13DF467B18E2B4E300A7F415 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DF467A18E2B4E300A7F415 /* AppDelegate.m */; };
 		13DF467E18E2B4E300A7F415 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13DF467C18E2B4E300A7F415 /* Main.storyboard */; };
-		13DF468118E2B4E300A7F415 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DF468018E2B4E300A7F415 /* ViewController.m */; };
 		13DF468318E2B4E300A7F415 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13DF468218E2B4E300A7F415 /* Images.xcassets */; };
-		13DF46A318E2C49400A7F415 /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DF46A218E2C49400A7F415 /* TestClass.m */; };
-		13DF46BA18E2F47C00A7F415 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DF46B918E2F47C00A7F415 /* CollectionViewController.m */; };
-		13DF46C118E2F63000A7F415 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DF46C018E2F63000A7F415 /* CollectionViewCell.m */; };
+		13DF46BA18E2F47C00A7F415 /* FNMealsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DF46B918E2F47C00A7F415 /* FNMealsViewController.m */; };
+		13DF46C118E2F63000A7F415 /* FNMealCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DF46C018E2F63000A7F415 /* FNMealCollectionViewCell.m */; };
 		1B228EA3B43C49A08E346A19 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6AD4276B74E4A298B67DF90 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0E7696E8F0E44C7A8A85F15B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		1330BAE918E415E000E26D52 /* CollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewFlowLayout.h; sourceTree = "<group>"; };
-		1330BAEA18E415E000E26D52 /* CollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		1330BAE918E415E000E26D52 /* FNCollectionViewDynamicWaterfallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNCollectionViewDynamicWaterfallLayout.h; sourceTree = "<group>"; };
+		1330BAEA18E415E000E26D52 /* FNCollectionViewDynamicWaterfallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNCollectionViewDynamicWaterfallLayout.m; sourceTree = "<group>"; };
 		133350A818E52FBF00DE8E4A /* TestImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TestImage.jpeg; sourceTree = "<group>"; };
 		133350AA18E559AF00DE8E4A /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		133350AB18E559AF00DE8E4A /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
@@ -41,6 +43,14 @@
 		133350AD18E559AF00DE8E4A /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
 		133350AE18E559AF00DE8E4A /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
 		133350AF18E559AF00DE8E4A /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		133350BA18E95FEC00DE8E4A /* FNRestaurantsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNRestaurantsViewController.h; sourceTree = "<group>"; };
+		133350BB18E95FEC00DE8E4A /* FNRestaurantsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNRestaurantsViewController.m; sourceTree = "<group>"; };
+		133350BD18E9600400DE8E4A /* FNRestaurantViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNRestaurantViewCell.h; sourceTree = "<group>"; };
+		133350BE18E9600400DE8E4A /* FNRestaurantViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNRestaurantViewCell.m; sourceTree = "<group>"; };
+		133350C018E9609D00DE8E4A /* FNRestaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNRestaurant.h; sourceTree = "<group>"; };
+		133350C118E9609D00DE8E4A /* FNRestaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNRestaurant.m; sourceTree = "<group>"; };
+		133350C818E9698F00DE8E4A /* FNMeal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNMeal.h; sourceTree = "<group>"; };
+		133350C918E9698F00DE8E4A /* FNMeal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNMeal.m; sourceTree = "<group>"; };
 		13DF466718E2B4E300A7F415 /* HelloParse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloParse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13DF466A18E2B4E300A7F415 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		13DF466C18E2B4E300A7F415 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -52,15 +62,11 @@
 		13DF467918E2B4E300A7F415 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		13DF467A18E2B4E300A7F415 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		13DF467D18E2B4E300A7F415 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		13DF467F18E2B4E300A7F415 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		13DF468018E2B4E300A7F415 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		13DF468218E2B4E300A7F415 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		13DF46A118E2C49400A7F415 /* TestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClass.h; sourceTree = "<group>"; };
-		13DF46A218E2C49400A7F415 /* TestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
-		13DF46B818E2F47C00A7F415 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
-		13DF46B918E2F47C00A7F415 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
-		13DF46BF18E2F63000A7F415 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
-		13DF46C018E2F63000A7F415 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		13DF46B818E2F47C00A7F415 /* FNMealsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNMealsViewController.h; sourceTree = "<group>"; };
+		13DF46B918E2F47C00A7F415 /* FNMealsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNMealsViewController.m; sourceTree = "<group>"; };
+		13DF46BF18E2F63000A7F415 /* FNMealCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNMealCollectionViewCell.h; sourceTree = "<group>"; };
+		13DF46C018E2F63000A7F415 /* FNMealCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNMealCollectionViewCell.m; sourceTree = "<group>"; };
 		B6AD4276B74E4A298B67DF90 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -101,6 +107,15 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		133350B918E95FEC00DE8E4A /* RestaurantsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				133350BA18E95FEC00DE8E4A /* FNRestaurantsViewController.h */,
+				133350BB18E95FEC00DE8E4A /* FNRestaurantsViewController.m */,
+			);
+			path = RestaurantsViewController;
+			sourceTree = "<group>";
+		};
 		13DF465E18E2B4E300A7F415 = {
 			isa = PBXGroup;
 			children = (
@@ -137,8 +152,6 @@
 				13DF467918E2B4E300A7F415 /* AppDelegate.h */,
 				13DF467A18E2B4E300A7F415 /* AppDelegate.m */,
 				13DF467C18E2B4E300A7F415 /* Main.storyboard */,
-				13DF467F18E2B4E300A7F415 /* ViewController.h */,
-				13DF468018E2B4E300A7F415 /* ViewController.m */,
 				13DF468218E2B4E300A7F415 /* Images.xcassets */,
 				133350A618E52FBF00DE8E4A /* Resources */,
 				13DF467118E2B4E300A7F415 /* Supporting Files */,
@@ -170,8 +183,10 @@
 		13DF46A018E2C47A00A7F415 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				13DF46A118E2C49400A7F415 /* TestClass.h */,
-				13DF46A218E2C49400A7F415 /* TestClass.m */,
+				133350C018E9609D00DE8E4A /* FNRestaurant.h */,
+				133350C118E9609D00DE8E4A /* FNRestaurant.m */,
+				133350C818E9698F00DE8E4A /* FNMeal.h */,
+				133350C918E9698F00DE8E4A /* FNMeal.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -179,10 +194,11 @@
 		13DF46B718E2F46A00A7F415 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				13DF46B818E2F47C00A7F415 /* CollectionViewController.h */,
-				13DF46B918E2F47C00A7F415 /* CollectionViewController.m */,
-				1330BAE918E415E000E26D52 /* CollectionViewFlowLayout.h */,
-				1330BAEA18E415E000E26D52 /* CollectionViewFlowLayout.m */,
+				133350B918E95FEC00DE8E4A /* RestaurantsViewController */,
+				13DF46B818E2F47C00A7F415 /* FNMealsViewController.h */,
+				13DF46B918E2F47C00A7F415 /* FNMealsViewController.m */,
+				1330BAE918E415E000E26D52 /* FNCollectionViewDynamicWaterfallLayout.h */,
+				1330BAEA18E415E000E26D52 /* FNCollectionViewDynamicWaterfallLayout.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -190,8 +206,10 @@
 		13DF46BE18E2F61B00A7F415 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				13DF46BF18E2F63000A7F415 /* CollectionViewCell.h */,
-				13DF46C018E2F63000A7F415 /* CollectionViewCell.m */,
+				13DF46BF18E2F63000A7F415 /* FNMealCollectionViewCell.h */,
+				13DF46C018E2F63000A7F415 /* FNMealCollectionViewCell.m */,
+				133350BD18E9600400DE8E4A /* FNRestaurantViewCell.h */,
+				133350BE18E9600400DE8E4A /* FNRestaurantViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -224,6 +242,7 @@
 		13DF465F18E2B4E300A7F415 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = FN;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Alexey Minaev";
 			};
@@ -303,12 +322,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13DF46A318E2C49400A7F415 /* TestClass.m in Sources */,
-				13DF468118E2B4E300A7F415 /* ViewController.m in Sources */,
-				1330BAEB18E415E000E26D52 /* CollectionViewFlowLayout.m in Sources */,
+				133350BF18E9600400DE8E4A /* FNRestaurantViewCell.m in Sources */,
+				133350CA18E9698F00DE8E4A /* FNMeal.m in Sources */,
+				133350C218E9609D00DE8E4A /* FNRestaurant.m in Sources */,
+				1330BAEB18E415E000E26D52 /* FNCollectionViewDynamicWaterfallLayout.m in Sources */,
 				13DF467B18E2B4E300A7F415 /* AppDelegate.m in Sources */,
-				13DF46BA18E2F47C00A7F415 /* CollectionViewController.m in Sources */,
-				13DF46C118E2F63000A7F415 /* CollectionViewCell.m in Sources */,
+				13DF46BA18E2F47C00A7F415 /* FNMealsViewController.m in Sources */,
+				133350BC18E95FEC00DE8E4A /* FNRestaurantsViewController.m in Sources */,
+				13DF46C118E2F63000A7F415 /* FNMealCollectionViewCell.m in Sources */,
 				13DF467718E2B4E300A7F415 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,20 +6,37 @@
 //  Copyright (c) 2014 Alexey Minaev. All rights reserved.
 //
 
-#import "CollectionViewController.h"
-#import "CollectionViewCell.h"
+#import "FNMealsViewController.h"
+#import "FNCollectionViewDynamicWaterfallLayout.h"
+#import "FNMealCollectionViewCell.h"
+#import "FNRestaurant.h"
+#import "FNMeal.h"
 
-@implementation CollectionViewController {
+@interface FNMealsViewController () <FNCollectionViewDynamicWaterfallLayoutDelegate, UINavigationControllerDelegate, UIGestureRecognizerDelegate>
+
+@property (nonatomic, strong) NSArray *meals;
+
+@end
+
+@implementation FNMealsViewController {
     NSMutableArray *_itemSizes;
 }
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    
     [self precalculateItemSizes];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-//    [self updateVisibleCellsWithParallax];
+    [super viewWillAppear:animated];
+    
+    [self.restaurant getAllMealsWithCompletion:^(NSArray *meals, NSError *error) {
+        self.meals = meals;
+        
+        [self precalculateItemSizes];
+        [self.collectionView reloadData];
+    }];
 }
 
 - (void)precalculateItemSizes {
@@ -40,15 +57,17 @@
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CollectionViewCell" forIndexPath:indexPath];
+    FNMeal *meal = self.meals[indexPath.row];
+    FNMealCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CollectionViewCell" forIndexPath:indexPath];
     cell.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%d.jpg", arc4random()%6+1]];
+    cell.titleLabel.text = meal.title;
     CGFloat position = [self parallaxPositionForCell:cell];
     [cell setParallaxPosition:position];
     return cell;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 20;
+    return [self.meals count];
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {

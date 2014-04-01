@@ -1,5 +1,5 @@
 //
-//  CollectionViewFlowLayout.h
+//  FNCollectionViewDynamicWaterfallLayout.h
 //  HelloParse
 //
 //  Created by Alexey Minaev on 26/03/14.
@@ -8,20 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-#pragma mark - CHTCollectionViewDelegateWaterfallLayout
-
-@class CHTCollectionViewWaterfallLayout;
-
-@protocol CHTCollectionViewDelegateWaterfallLayout <UICollectionViewDelegate>
+@protocol FNCollectionViewDynamicWaterfallLayoutDelegate <UICollectionViewDelegate>
 @required
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath;
 
 @end
 
-#pragma mark - CHTCollectionViewWaterfallLayout
-
-@interface CollectionViewFlowLayout : UICollectionViewLayout
+@interface FNCollectionViewDynamicWaterfallLayout : UICollectionViewLayout
 
 /**
  *  @brief How many columns for this layout.

@@ -1,14 +1,15 @@
 //
-//  TestClass.h
+//  FNMeal.h
 //  HelloParse
 //
-//  Created by Alexey Minaev on 26/03/14.
+//  Created by Alexey Minaev on 31/03/14.
 //  Copyright (c) 2014 Alexey Minaev. All rights reserved.
 //
 
 #import <Parse/Parse.h>
+#import <Parse/PFSubclassing.h>
 
-@interface TestClass : PFObject <PFSubclassing>
+@interface FNMeal : PFObject <PFSubclassing>
 
 @property (nonatomic, copy) NSString *title;
 

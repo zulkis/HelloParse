@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CollectionViewCell : UICollectionViewCell
+@interface FNMealCollectionViewCell : UICollectionViewCell
 
 @property (nonatomic, weak, readonly) IBOutlet UIImageView *imageView;
+@property (nonatomic, weak, readonly) IBOutlet UILabel *titleLabel;
 
 - (void)setParallaxPosition:(CGFloat)position;
 

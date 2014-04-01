@@ -6,16 +6,17 @@
 //  Copyright (c) 2014 Alexey Minaev. All rights reserved.
 //
 
-#import "CollectionViewCell.h"
+#import "FNMealCollectionViewCell.h"
 
-@interface CollectionViewCell ()
+@interface FNMealCollectionViewCell ()
 
 @property (nonatomic, weak, readwrite) IBOutlet UIImageView *imageView;
+@property (nonatomic, weak, readwrite) IBOutlet UILabel *titleLabel;
 @property (nonatomic) CGRect initialImageViewFrame;
 
 @end
 
-@implementation CollectionViewCell
+@implementation FNMealCollectionViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];

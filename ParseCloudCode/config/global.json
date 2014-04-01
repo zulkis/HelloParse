@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "FoodNow (Development)": {
+            "applicationId": "9Q6cuXVQZ4p3VhOl8M3ufwDdKY9bApY8n0BrMNPu", 
+            "masterKey": "FBWAPEJqgRLDwnkwo01qws7RRBctPZ9JHfbOhVMi"
+        }, 
+        "_default": {
+            "link": "FoodNow (Development)"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.2.18"
+    }
+}

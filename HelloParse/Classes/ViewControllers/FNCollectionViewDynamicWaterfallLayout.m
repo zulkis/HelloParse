@@ -1,19 +1,16 @@
 //
-//  CollectionViewFlowLayout.m
+//  FNCollectionViewDynamicWaterfallLayout.m
 //  HelloParse
 //
 //  Created by Alexey Minaev on 26/03/14.
 //  Copyright (c) 2014 Alexey Minaev. All rights reserved.
 //
 
-#import "CollectionViewFlowLayout.h"
+#import "FNCollectionViewDynamicWaterfallLayout.h"
 
-NSString *const CHTCollectionElementKindSectionHeader = @"CHTCollectionElementKindSectionHeader";
-NSString *const CHTCollectionElementKindSectionFooter = @"CHTCollectionElementKindSectionFooter";
+@interface FNCollectionViewDynamicWaterfallLayout ()
 
-@interface CollectionViewFlowLayout ()
-
-@property (nonatomic, weak) id <CHTCollectionViewDelegateWaterfallLayout> delegate;
+@property (nonatomic, weak) id <FNCollectionViewDynamicWaterfallLayoutDelegate> delegate;
 @property (nonatomic, strong) NSMutableArray *columnHeights;
 @property (nonatomic, strong) NSMutableArray *sectionItemAttributes;
 @property (nonatomic, strong) NSMutableArray *allItemAttributes;
@@ -26,7 +23,7 @@ NSString *const CHTCollectionElementKindSectionFooter = @"CHTCollectionElementKi
 
 @end
 
-@implementation CollectionViewFlowLayout
+@implementation FNCollectionViewDynamicWaterfallLayout
 
 const NSInteger unionSize = 20;
 
@@ -121,8 +118,8 @@ const NSInteger unionSize = 20;
         return;
     }
     
-    self.delegate = (id <CHTCollectionViewDelegateWaterfallLayout> )self.collectionView.delegate;
-    NSAssert([self.delegate conformsToProtocol:@protocol(CHTCollectionViewDelegateWaterfallLayout)], @"UICollectionView's delegate should conform to CHTCollectionViewDelegateWaterfallLayout protocol");
+    self.delegate = (id <FNCollectionViewDynamicWaterfallLayoutDelegate> )self.collectionView.delegate;
+    NSAssert([self.delegate conformsToProtocol:@protocol(FNCollectionViewDynamicWaterfallLayoutDelegate)], @"UICollectionView's delegate should conform to FNCollectionViewDynamicWaterfallLayoutDelegate protocol");
     NSAssert(self.columnCount > 0, @"UICollectionViewWaterfallLayout's columnCount should be greater than 0");
     
     NSInteger idx = 0;

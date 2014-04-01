@@ -7,19 +7,21 @@
 //
 
 #import "AppDelegate.h"
-#import "TestClass.h"
+#import "FNMeal.h"
+#import "FNRestaurant.h"
 
 @implementation AppDelegate
 
 - (void)registerClasses {
-    [TestClass registerSubclass];
+    [FNMeal registerSubclass];
+    [FNRestaurant registerSubclass];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [self registerClasses];
-    [Parse setApplicationId:@"EuKErA7kfno0VJxB9AAUGAyQwidYbS4IxvhnN4MT"
-                  clientKey:@"z3sW2WdDP1XWL4z9ND68itmmQqHd8b7H8PYxktwd"];
+    [Parse setApplicationId:@"9Q6cuXVQZ4p3VhOl8M3ufwDdKY9bApY8n0BrMNPu"
+                  clientKey:@"AEocunbWyQgjulg3FTUyfq9CVe4iAJEiQ7MrvG6K"];
     
     [PFUser enableAutomaticUser];
     
